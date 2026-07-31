@@ -1,86 +1,88 @@
-# Hi there, I'm Xavier Peña 👋
+# Xavier Peña
 
-I am a **Data Scientist**, **Data Engineer**, and **Full-Stack Developer** focused on building robust data pipelines, scalable backend environments, real-time cybernetic systems, and research-driven machine learning models. 
-
-With a strong academic background in systems design, database optimization, digital signal processing (DSP), and neural computation, I enjoy bridging the gap between hardware telemetry, theoretical computer science, and software engineering. My goal is to apply my skills to cutting-edge research environments (such as the **Okinawa Institute of Science and Technology - OIST**) and advanced industry roles in Data Science, DataOps, and Robotics.
+Software Engineer with a research focus on machine learning, data engineering, and computational intelligence. I build systems that span the full stack — from low-level hardware interfaces and biosignal processing to data pipelines, deep learning models, and web applications.
 
 ---
 
-## 🛠️ Tech Stack & Skills
+## Technical Stack
 
-- **Languages:** Python, SQL (PL/pgSQL), Java, TypeScript, HTML5/CSS3/JavaScript
-- **Data Engineering & BI:** PostgreSQL, Pentaho Data Integration (PDI), MinIO (S3), Kimball Star Schema design, Mondrian OLAP Cubes, Metabase, Saiku
-- **AI, DSP & Scientific Computing:** PyTorch, Scikit-Learn, NumPy, SciPy (Signal/Fourier), Librosa, CatBoost, XGBoost, MediaPipe, VGG-19, Hopfield Associative Memory, Zero-phase Digital Filtering
-- **Signal Processing & Robotics:** BrainFlow API (EEG/EMG streaming), serial telemetry (UART), Arduino controllers, zero-phase digital filtering
-- **Backend & Full-Stack Development:** FastAPI, Django, REST APIs, Streamlit, Ionic, Angular, Capacitor, Docker, Git
+**Languages:** Python, SQL (PL/pgSQL), Java, TypeScript, HTML5/CSS3/JavaScript
 
----
+**Data Engineering & BI:** PostgreSQL, Pentaho Data Integration (PDI), MinIO (S3), Kimball Star Schema, Mondrian OLAP Cubes, Metabase, Saiku
 
-## 🚀 Featured Projects
+**AI & Scientific Computing:** PyTorch, Scikit-Learn, NumPy, SciPy, Librosa, CatBoost, XGBoost, MediaPipe, VGG-19, Hopfield Networks
 
-Here are the key projects I have designed and implemented:
+**Signal Processing & Robotics:** BrainFlow API (EEG/EMG), zero-phase Butterworth filtering, serial telemetry (UART), Arduino
 
-### 📊 Data Engineering & Databases
-
-#### 1. [ENEMDU Data Warehouse & Machine Learning Pipeline](https://github.com/XavierPenaA/enemdu-data-warehouse)
-*An end-to-end Data Engineering and Data Science pipeline built to analyze socio-economic and employment trends in Ecuador.*
-- **Ingestion & ETL:** Python script uploads raw SPSS/CSV datasets to a local **MinIO S3** bucket; **Pentaho Data Integration (PDI)** cleans the data (Silver layer) and loads it into a **PostgreSQL** star schema (Gold layer).
-- **OLAP & BI:** Built multi-dimensional OLAP cubes via **Mondrian XML Schema** and visual reports with **Metabase** (automated via Python script configurations).
-- **Machine Learning:** Implemented a predictive pipeline using **SMOTE** to handle class imbalances and trained **CatBoost** and **XGBoost** models to classify employment status and predict incomes.
-
-#### 2. [Smart Weather Monitoring & Alerts System](https://github.com/XavierPenaA/weather-monitoring-alerts)
-*A database-intensive full-stack backend-centric application showing advanced database design and API integration.*
-- **Database Engine:** Implemented a **PostgreSQL** schema featuring composite indexes, complex views, **PL/pgSQL stored procedures** (for automated alerts checking), and a trigger-based **JSONB auditing system**.
-- **Services:** Built a **FastAPI** REST server that queries meteorological statistics from the Open-Meteo API and saves records, connected to a **Streamlit** visualization dashboard.
+**Backend & Infrastructure:** FastAPI, Django, REST APIs, Streamlit, Ionic, Angular, Capacitor, Docker, Git
 
 ---
 
-### 🧠 AI, DSP & Scientific Computing
+## Projects
 
-#### 3. [Digital Signal Processing (DSP) Audio Toolkit](https://github.com/XavierPenaA/dsp-audio-toolkit)
-*A comprehensive digital signal processing and analysis toolkit for audio waveforms.*
-- **Song Identification:** Features a desktop Tkinter application that calculates and compares peak frequencies from short-time Fourier spectrograms, applying a **Hann Window** to mitigate spectral leakage.
-- **Equalizer & Filter:** Implements frequency-domain filtering ($Y(j\omega) = X(j\omega) \cdot H(j\omega)$) via the **Fast Fourier Transform (FFT)**, allowing users to apply custom low-pass (bass boost) and band-pass (telephony voiceband) filters, saving output WAV files and rendering 8-panel diagnostic waveform plots.
+### Data Engineering & Databases
 
-#### 4. [Neural Style Transfer (NST) Web Application](https://github.com/XavierPenaA/neural-style-transfer-app)
-*An interactive deep learning application that synthesizes artistic images using convolutional neural networks.*
-- **Deep Learning:** PyTorch implementation of the Gatys et al. algorithm utilizing a pre-trained **VGG-19** model.
-- **Optimization Study:** Comparative analysis of **L-BFGS** vs. **Adam** optimization solvers, demonstrating L-BFGS's superiority in style transfer convergence.
-- **Web App:** Built an asynchronous Flask backend that executes GPU-accelerated transfers in background threads, hooked to a modern responsive HTML/CSS/JS frontend.
+#### [ENEMDU Data Warehouse & Machine Learning Pipeline](https://github.com/XavierPenaA/enemdu-data-warehouse)
+End-to-end pipeline for analyzing socio-economic and employment trends in Ecuador.
+- Raw SPSS/CSV ingestion to MinIO S3; cleaned via Pentaho PDI into a PostgreSQL Kimball star schema.
+- Multi-dimensional OLAP cubes via Mondrian XML Schema with Metabase reporting.
+- Predictive pipeline with SMOTE oversampling and CatBoost/XGBoost classifiers for employment and income modeling.
 
-#### 5. [Hopfield Face Recognition (Bio-Inspired AI)](https://github.com/XavierPenaA/hopfield-face-recognition)
-*A research-oriented computer vision system that implements recurrent neural networks from scratch.*
-- **Neuro-AI:** Custom implementation of a recurrent **Hopfield Network** using Hebbian learning rules and asynchronous update dynamics to serve as associative memory.
-- **Feature Extraction:** Leverages **MediaPipe Face Mesh** to extract grayscale intensities from 67 key landmark nodes, binarizing them into descriptor vectors to serve as attractor states.
-- **UI:** Interactive Tkinter and Matplotlib GUI to train images and test recognition on noisy/corrupted face inputs.
+#### [Smart Weather Monitoring & Alerts System](https://github.com/XavierPenaA/weather-monitoring-alerts)
+Database-intensive backend application demonstrating advanced PostgreSQL design patterns.
+- Schema features composite indexes, complex views, PL/pgSQL stored procedures, and a trigger-based JSONB auditing system.
+- FastAPI REST server integrating the Open-Meteo API, connected to a Streamlit analytics dashboard.
 
 ---
 
-### 🤖 Robotics, Full-Stack & IoT Systems
+### AI, DSP & Scientific Computing
 
-#### 6. [ELEGOO Smart Car - Keyboard & Brain-Computer Interface (BCI)](https://github.com/XavierPenaA/elegoo-bci-smart-car)
-*A real-time robotics and cybernetics controller connecting human biosignals with physical hardware.*
-- **DSP & BCI:** Streams real-time EEG and EMG data from an OpenBCI headband using the **BrainFlow** API. Cleans signals with **Notch and zero-phase 4th-order Butterworth bandpass filters** to isolate EOG eye movement and EMG muscle activity.
-- **Gesture Classification:** Features custom-developed feature engineering formulas to detect symmetric blinks (Forward), asymmetric winks (Left/Right), and jaw clenches (Backward).
-- **Hardware Serial:** Sends ASCII command codes via **Serial/UART** (using `pyserial`) to steer a physical Arduino-based ELEGOO Smart Car, incorporating manual keyboard overrides using ctypes Windows API hooks.
+#### [Digital Signal Processing (DSP) Audio Toolkit](https://github.com/XavierPenaA/dsp-audio-toolkit)
+Desktop toolkit for audio signal analysis and frequency-domain processing.
+- Song identification via short-time Fourier spectrogram comparison with Hann windowing.
+- Frequency-domain filtering ($Y(j\omega) = X(j\omega) \cdot H(j\omega)$) via FFT for custom low-pass and band-pass filters, with WAV export and 8-panel diagnostic plots.
 
-#### 7. [IoT Air Quality Monitoring & Device Management System](https://github.com/XavierPenaA/iot-air-quality-system)
-*A cross-platform hybrid mobile and web application for managing IoT sensor grids in industrial plants.*
-- **Backend API:** Built a **Django** REST server managing entities like plant zones, IoT devices, telemetry sensors ($CO_2$, $PM_{2.5}$, temp), and automatic event triggers. Incorporates a polymorphic database schema for device maintenance logging and Role-Based Access Control (RBAC).
-- **Frontend App:** Implemented a hybrid mobile and web frontend using **Ionic**, **Angular**, and **Capacitor** to display real-time sensor analytics, historical trends, and system status.
+#### [Neural Style Transfer (NST) Web Application](https://github.com/XavierPenaA/neural-style-transfer-app)
+Interactive deep learning application for artistic image synthesis using CNNs.
+- PyTorch implementation of the Gatys et al. algorithm using a pre-trained VGG-19 feature extractor.
+- Comparative study of L-BFGS vs. Adam optimizers for style transfer convergence.
+- Asynchronous Flask backend executing GPU-accelerated transfers, with a responsive HTML/CSS/JS frontend.
 
-#### 8. [Gym Management System with Automated Notifications](https://github.com/XavierPenaA/gym-management-system)
-*A Java desktop application built using the MVC pattern featuring Twilio integration for automated billing alerts.*
-- **Architecture:** Rigid implementation of the **Model-View-Controller (MVC)** architectural pattern separating Swing layouts from business processes.
-- **WhatsApp Integration:** Built a messaging manager utilizing the **Twilio SDK** to automatically generate invoices and send billing notifications to members.
-- **Persistence Layer:** Implemented lightweight binary data persistence using native **Java Object Serialization** (`java.io.Serializable`) to read and write system state to local data files.
+#### [Hopfield Face Recognition (Bio-Inspired AI)](https://github.com/XavierPenaA/hopfield-face-recognition)
+Research implementation of recurrent neural networks for associative memory.
+- Custom Hopfield Network built from scratch using Hebbian learning rules and asynchronous update dynamics.
+- Feature extraction via MediaPipe Face Mesh: 67 landmark nodes binarized into descriptor vectors as attractor states.
+- Interactive Tkinter/Matplotlib GUI for training and testing recognition on corrupted face inputs.
 
 ---
 
-## 📬 Connect with me
+### Robotics, Full-Stack & IoT
 
-- **LinkedIn:** [Xavier Peña on LinkedIn](https://www.linkedin.com/in/xavier-pena)
+#### [ELEGOO Smart Car - Keyboard & Brain-Computer Interface (BCI)](https://github.com/XavierPenaA/elegoo-bci-smart-car)
+Real-time robotics controller mapping human biosignals to physical hardware commands.
+- Real-time EEG/EMG streaming via BrainFlow API, cleaned with Notch and zero-phase 4th-order Butterworth bandpass filters.
+- Custom feature engineering to classify symmetric blinks (Forward), asymmetric winks (Left/Right), and jaw clenches (Backward).
+- ASCII command transmission over Serial/UART to an Arduino-based ELEGOO Smart Car, with keyboard overrides via ctypes Windows API hooks.
+
+#### [IoT Air Quality Monitoring & Device Management System](https://github.com/XavierPenaA/iot-air-quality-system)
+Cross-platform mobile and web application for managing industrial IoT sensor grids.
+- Django REST backend managing plant zones, devices, telemetry sensors (CO2, PM2.5, temperature), and polymorphic maintenance logging with RBAC.
+- Ionic/Angular/Capacitor frontend for real-time sensor analytics, historical trends, and system status.
+
+#### [Gym Management System with Automated Notifications](https://github.com/XavierPenaA/gym-management-system)
+Java desktop application using MVC pattern with Twilio-based billing automation.
+- Strict MVC separation of Swing UI from business logic.
+- Twilio SDK integration for automated invoice generation and WhatsApp billing notifications.
+- Lightweight persistence via Java Object Serialization.
+
+---
+
+## Contact
+
+- **LinkedIn:** [xavier-pena](https://www.linkedin.com/in/xavier-pena)
 - **Email:** [xavier.pena@ucuenca.edu.ec](mailto:xavier.pena@ucuenca.edu.ec)
-- **GitHub:** [github.com/XavierPenaA](https://github.com/XavierPenaA)
+- **GitHub:** [XavierPenaA](https://github.com/XavierPenaA)
 
-*“The best way to predict the future is to invent it.”*
+---
+
+*"The best way to predict the future is to invent it."*
